@@ -22,6 +22,7 @@ public class Calculator {
         } catch (IncorrectInputStringException e) {
             System.err.println(e);
             calculate();
+            return;
         }
 
         calcConsole.ReportResponse(evaluatedExpression(reversePolishParser.parse(inputString)));
